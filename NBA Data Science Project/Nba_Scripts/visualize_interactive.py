@@ -39,7 +39,7 @@ def main():
         rows=2, cols=1,
         row_heights=[0.55, 0.45],
         subplot_titles=(
-            f"Top {TOP_N} Clutch Shooters (min 5 attempts)",
+            f"Top {TOP_N} Clutch Shooters (min 150 attempts)",
             "Attempts vs. FG% \u2014 All Qualifying Players",
         ),
         vertical_spacing=0.15,

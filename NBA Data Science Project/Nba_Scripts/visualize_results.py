@@ -24,7 +24,7 @@ def main():
     ax.barh(top["player_name"], top["fg_pct"], color="#1d428a")
     ax.invert_yaxis()  # highest FG% at the top
     ax.set_xlabel("FG% on potential tying/go-ahead shots (\u226424s left, 4th/OT)")
-    ax.set_title(f"Top {TOP_N} Clutch Shooters (min 5 attempts)")
+    ax.set_title(f"Top {TOP_N} Clutch Shooters (min 150 attempts)")
     for i, (pct, attempts) in enumerate(zip(top["fg_pct"], top["attempts"])):
         ax.text(pct + 0.01, i, f"{attempts} att", va="center", fontsize=8)
     plt.tight_layout()

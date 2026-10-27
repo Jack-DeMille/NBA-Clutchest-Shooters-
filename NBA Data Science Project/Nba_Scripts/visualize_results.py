@@ -41,9 +41,9 @@ def main():
     # Some players land on the exact same point (identical attempts + FG%,
     # i.e. a tie). Merge their names into one label instead of letting
     # adjustText fight to separate two labels that belong at the same spot.
-    top10 = df.head(10).copy()
+    top25 = df.head(25).copy()
     grouped = (
-        top10.groupby(["attempts", "fg_pct"])["player_name"]
+        top25.groupby(["attempts", "fg_pct"])["player_name"]
         .apply(lambda names: " / ".join(names))
         .reset_index()
     )

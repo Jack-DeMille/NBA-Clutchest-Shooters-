@@ -28,7 +28,7 @@ def main():
     for i, (pct, attempts) in enumerate(zip(top["fg_pct"], top["attempts"])):
         ax.text(pct + 0.01, i, f"{attempts} att", va="center", fontsize=8)
     plt.tight_layout()
-    plt.savefig("clutch_leaderboard_bar.png", dpi=150)
+    plt.savefig("../charts/clutch_leaderboard_bar.png", dpi=150)
     print("Saved clutch_leaderboard_bar.png")
 
     # --- Chart 2: attempts vs FG%, to visualize the small-sample effect ---
@@ -58,7 +58,7 @@ def main():
     ax.set_ylabel("FG%")
     ax.set_title("Attempts vs. FG% (more attempts = more reliable %)")
     plt.tight_layout()
-    plt.savefig("attempts_vs_fgpct.png", dpi=150)
+    plt.savefig("../charts/attempts_vs_fgpct.png", dpi=150)
     print("Saved attempts_vs_fgpct.png")
 
 

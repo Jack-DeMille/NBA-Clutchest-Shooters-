@@ -73,7 +73,7 @@ The leaderboards combine regular season and playoffs. The player checker in the 
 You'll need Python and about a couple of hours of patience for the data pull. There's no API key to sign up for.
 
 ```bash
-pip3 install -r requirements.txt
+pip3 install nba_api pandas matplotlib plotly adjustText
 python3 get_game_ids.py             # builds the list of games
 python3 build_clutch_dataset.py     # the slow one (hours); safe to stop and restart
 python3 aggregate_results.py        # the leaderboard

@@ -94,4 +94,4 @@ Built with Python, pandas, `nba_api`, matplotlib, and Plotly. The data comes fro
 ## About me
 
 Built by [Jack DeMille](https://github.com/Jack-DeMille).  
-[LinkedIn](www.linkedin.com/in/jack-demille)
+[LinkedIn](https://www.linkedin.com/in/jack-demille)
